@@ -111,6 +111,7 @@ def stock_predictor(stock):
     pred = scaler.inverse_transform(pred)
     pred = pred[0]
     pred = pred[0]
+    pred = round(pred, 2)
     #print("The predicted price for the next trading day is: {}".format(pred))
     
     pred = json.dumps(str(pred))    
