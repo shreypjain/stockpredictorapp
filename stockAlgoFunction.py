@@ -1,5 +1,6 @@
 #import the libraries
 import math
+import json
 import datetime 
 import numpy as np
 import pandas as pd
@@ -110,6 +111,7 @@ def stock_predictor(stock):
     pred = scaler.inverse_transform(pred)
     pred = pred[0]
     pred = pred[0]
-    print("The predicted price for the next trading day is: {}".format(pred))
+    #print("The predicted price for the next trading day is: {}".format(pred))
     
-    return {'png' : grp,'prediction' : pred} 
+    pred = json.dumps(str(pred))    
+    return {'prediction' : pred} 

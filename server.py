@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May  2 21:19:39 2020
-
-@author: shreyjain
-"""
-
 from flask import Flask, request
 import requests
 
